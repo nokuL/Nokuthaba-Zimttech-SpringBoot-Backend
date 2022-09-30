@@ -1,12 +1,12 @@
-package com.nokuthaba.zimttechapp.controller;
+package com.nokuthaba.lostAndFoundApp.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.nokuthaba.zimttechapp.entity.JwtRequest;
-import com.nokuthaba.zimttechapp.entity.JwtResponse;
-import com.nokuthaba.zimttechapp.service.JwtService;
+import com.nokuthaba.lostAndFoundApp.entity.JwtRequest;
+import com.nokuthaba.lostAndFoundApp.entity.JwtResponse;
+import com.nokuthaba.lostAndFoundApp.service.JwtService;
 
 @RestController
 @CrossOrigin

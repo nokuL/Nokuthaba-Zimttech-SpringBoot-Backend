@@ -1,12 +1,12 @@
-package com.nokuthaba.zimttechapp.service;
+package com.nokuthaba.lostAndFoundApp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import com.nokuthaba.zimttechapp.dao.RoleDao;
-import com.nokuthaba.zimttechapp.dao.UserDao;
-import com.nokuthaba.zimttechapp.entity.Role;
-import com.nokuthaba.zimttechapp.entity.User;
+import com.nokuthaba.lostAndFoundApp.dao.RoleDao;
+import com.nokuthaba.lostAndFoundApp.dao.UserDao;
+import com.nokuthaba.lostAndFoundApp.entity.Role;
+import com.nokuthaba.lostAndFoundApp.entity.User;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -30,10 +30,10 @@ public class UserService {
         adminRole.setRoleDescription("Admin role");
         roleDao.save(adminRole);
 
-        Role userRole = new Role();
-        userRole.setRoleName("User");
-        userRole.setRoleDescription("Default role for newly created record");
-        roleDao.save(userRole);
+        Role clientRole = new Role();
+        clientRole.setRoleName("Client");
+        clientRole.setRoleDescription("Default role for newly created record");
+        roleDao.save(clientRole);
 
         User adminUser = new User();
         adminUser.setUserName("admin123");
@@ -46,12 +46,12 @@ public class UserService {
         userDao.save(adminUser);
 
       User user = new User();
-      user.setUserName("raj123");
-      user.setUserPassword(getEncodedPassword("raj@123"));
-       user.setUserFirstName("raj");
-      user.setUserLastName("sharma");
+      user.setUserName("user");
+      user.setUserPassword(getEncodedPassword("user@123"));
+       user.setUserFirstName("user");
+      user.setUserLastName("user");
        Set<Role> userRoles = new HashSet<>();
-      userRoles.add(userRole);
+      userRoles.add(clientRole);
       user.setRole(userRoles);
        userDao.save(user);
     }

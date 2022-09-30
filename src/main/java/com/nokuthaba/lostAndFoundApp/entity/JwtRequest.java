@@ -1,4 +1,4 @@
-package com.nokuthaba.zimttechapp.entity;
+package com.nokuthaba.lostAndFoundApp.entity;
 
 public class JwtRequest {
 

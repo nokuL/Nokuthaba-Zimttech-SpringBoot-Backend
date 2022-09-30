@@ -1,6 +1,6 @@
-package com.nokuthaba.zimttechapp.dao;
+package com.nokuthaba.lostAndFoundApp.dao;
 
-import com.nokuthaba.zimttechapp.entity.User;
+import com.nokuthaba.lostAndFoundApp.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

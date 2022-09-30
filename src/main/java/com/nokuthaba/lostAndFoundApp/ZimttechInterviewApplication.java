@@ -1,4 +1,4 @@
-package com.nokuthaba.zimttechapp;
+package com.nokuthaba.lostAndFoundApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

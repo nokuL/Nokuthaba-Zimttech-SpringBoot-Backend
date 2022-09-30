@@ -1,6 +1,6 @@
-package com.nokuthaba.zimttechapp.dao;
+package com.nokuthaba.lostAndFoundApp.dao;
 
-import com.nokuthaba.zimttechapp.entity.Role;
+import com.nokuthaba.lostAndFoundApp.entity.Role;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

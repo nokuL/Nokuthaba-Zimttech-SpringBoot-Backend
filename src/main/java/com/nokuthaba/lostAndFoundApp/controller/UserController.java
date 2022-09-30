@@ -1,7 +1,7 @@
-package com.nokuthaba.zimttechapp.controller;
+package com.nokuthaba.lostAndFoundApp.controller;
 
-import com.nokuthaba.zimttechapp.entity.User;
-import com.nokuthaba.zimttechapp.service.UserService;
+import com.nokuthaba.lostAndFoundApp.entity.User;
+import com.nokuthaba.lostAndFoundApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.nokuthaba.zimttechapp.util;
+package com.nokuthaba.lostAndFoundApp.util;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -1,11 +1,11 @@
-package com.nokuthaba.zimttechapp.controller;
+package com.nokuthaba.lostAndFoundApp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.nokuthaba.zimttechapp.entity.Role;
-import com.nokuthaba.zimttechapp.service.RoleService;
+import com.nokuthaba.lostAndFoundApp.entity.Role;
+import com.nokuthaba.lostAndFoundApp.service.RoleService;
 
 @RestController
 public class RoleController {

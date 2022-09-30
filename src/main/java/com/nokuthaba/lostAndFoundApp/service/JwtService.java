@@ -1,10 +1,10 @@
-package com.nokuthaba.zimttechapp.service;
+package com.nokuthaba.lostAndFoundApp.service;
 
-import com.nokuthaba.zimttechapp.dao.UserDao;
-import com.nokuthaba.zimttechapp.entity.JwtRequest;
-import com.nokuthaba.zimttechapp.entity.JwtResponse;
-import com.nokuthaba.zimttechapp.entity.User;
-import com.nokuthaba.zimttechapp.util.JwtUtil;
+import com.nokuthaba.lostAndFoundApp.dao.UserDao;
+import com.nokuthaba.lostAndFoundApp.entity.JwtRequest;
+import com.nokuthaba.lostAndFoundApp.entity.JwtResponse;
+import com.nokuthaba.lostAndFoundApp.entity.User;
+import com.nokuthaba.lostAndFoundApp.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;

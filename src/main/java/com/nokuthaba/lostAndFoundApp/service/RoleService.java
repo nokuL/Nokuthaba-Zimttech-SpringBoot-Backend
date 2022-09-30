@@ -1,8 +1,8 @@
-package com.nokuthaba.zimttechapp.service;
-import com.nokuthaba.zimttechapp.entity.Role;
+package com.nokuthaba.lostAndFoundApp.service;
+import com.nokuthaba.lostAndFoundApp.entity.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.nokuthaba.zimttechapp.dao.RoleDao;
+import com.nokuthaba.lostAndFoundApp.dao.RoleDao;
 
 @Service
 public class RoleService {

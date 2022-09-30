@@ -1,4 +1,4 @@
-package com.nokuthaba.zimttechapp.configuration;
+package com.nokuthaba.lostAndFoundApp.configuration;
 
 /*import com.youtube.jwt.service.JwtService;
 import com.youtube.jwt.util.JwtUtil;
@@ -10,8 +10,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import com.nokuthaba.zimttechapp.service.JwtService;
-import com.nokuthaba.zimttechapp.util.JwtUtil;
+import com.nokuthaba.lostAndFoundApp.service.JwtService;
+import com.nokuthaba.lostAndFoundApp.util.JwtUtil;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
