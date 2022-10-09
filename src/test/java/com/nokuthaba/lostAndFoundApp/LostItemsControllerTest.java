@@ -63,14 +63,14 @@ public class LostItemsControllerTest  {
     }
 
     @Test
-    @DisplayName("Test create new course")
-    public void testCreateCourse()throws  Exception{
+    @DisplayName("Test create new item")
+    public void testCreateItem()throws  Exception{
           when(lostItemsService.recordLostItem(lostItem)).thenReturn(lostItem);
         ObjectMapper objectMapper = new ObjectMapper();
-        String course_string = objectMapper.writeValueAsString(lostItem);
+        String item_string = objectMapper.writeValueAsString(lostItem);
         MockHttpServletRequestBuilder mockHttpServletRequestBuilder = MockMvcRequestBuilders.post("/recordLostItem")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(course_string);
+                .content(item_string);
         ResultActions resultActions = mockMvc.perform(mockHttpServletRequestBuilder);
         MvcResult mvcResult = resultActions.andReturn();
         MockHttpServletResponse mockHttpServletResponse = mvcResult.getResponse();
@@ -78,14 +78,14 @@ public class LostItemsControllerTest  {
     }
 
     @Test
-    @DisplayName("Test edit course")
-    public void testEditCourse()throws  Exception{
+    @DisplayName("Test edit item")
+    public void testEditItem()throws  Exception{
         when(lostItemsService.editLostItem(lostItem)).thenReturn(lostItem);
         ObjectMapper objectMapper = new ObjectMapper();
-        String course_string = objectMapper.writeValueAsString(lostItem);
+        String item_string = objectMapper.writeValueAsString(lostItem);
         MockHttpServletRequestBuilder mockHttpServletRequestBuilder = MockMvcRequestBuilders.put("/edit-lost-item")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(course_string);
+                .content(item_string);
         ResultActions resultActions = mockMvc.perform(mockHttpServletRequestBuilder);
         MvcResult mvcResult = resultActions.andReturn();
         MockHttpServletResponse mockHttpServletResponse = mvcResult.getResponse();
@@ -94,8 +94,8 @@ public class LostItemsControllerTest  {
     }
 
     @Test
-    @DisplayName("Test Delete course")
-    public void deleteCourseTest() throws  Exception{
+    @DisplayName("Test Delete item")
+    public void deleteItem() throws  Exception{
         doNothing().when(lostItemsDao).deleteById(1L);
         MockHttpServletRequestBuilder mockHttpServletRequestBuilder = MockMvcRequestBuilders.delete("/delete/lost-item/{id}", 1L)
                 .contentType(MediaType.APPLICATION_JSON);
